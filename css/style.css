@@ -355,14 +355,15 @@ input[type="text"] {
     text-align: left;
     list-style: none;
     padding: 0 2rem;
+    flex: 1;
 }
 .menu-container li {
     line-height: 2;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 .menu-container ul li span {
-    
+    position: absolute;
+    right: 0;
 }
 .main-menu-title p {
     font-size: initial;
@@ -495,7 +496,7 @@ input[type="text"] {
     .footer-info {
         width: 100%;
     }
-    /* -------mobile responsive for menu.htmk ---------------------- */
+    /* -------mobile responsive for menu.html ---------------------- */
     .main-menu-wrapper {
         flex-wrap: wrap;
     }
@@ -507,7 +508,7 @@ input[type="text"] {
         flex-wrap: wrap;
     }
     .menu-photo {
-        flex: 1;
+        width: 100%;
     }
     .menu-container ul {
         text-align: left;
@@ -516,6 +517,27 @@ input[type="text"] {
     }
     .reverse {
         flex-direction: row;
+    }
+    .aside-menu {
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .aside-menu li {
+        border-bottom: 1px solid #ccc;
+    }
+    .footer-container {
+        text-align: center;
+    }
+    .icon {
+        justify-content: center;
+    }
+    .clock {
+        color: cornsilk;
+        width: 150px;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 36px;
     }
 }
 /* -----Tablet------740-1024px */
