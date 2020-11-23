@@ -1,3 +1,6 @@
+/* font-family: 'Kosugi', sans-serif;
+font-family: 'Nerko One', cursive; */
+
 .head-logo {
     text-align: center;
 }
@@ -18,6 +21,8 @@
 .menubar-nav a {
     text-decoration: none;
     color: cornsilk;
+    font-family: 'Nerko One', cursive;
+    font-size: 2.5rem;
 }
 .menubar-nav a::before {
     content: "";
@@ -65,11 +70,13 @@
     font-size: 3rem;
     font-weight: normal;
     color: white;
+    font-family: 'Kosugi', sans-serif;
 }
 .top-key-text p {
     margin-bottom: 40px;
     font-size: 2rem;
     color: white;
+    font-family: 'Kosugi', sans-serif;
 }
 .menu-button {
     min-width: 280px;
@@ -79,6 +86,7 @@
     border-radius: 23px;
     text-decoration: none;
     color: white;
+    font-family: 'Kosugi', sans-serif;
 }
 .menu-button:hover {
     background-color: white;
@@ -111,14 +119,17 @@
     text-align: center;
     line-height: 1;
     font-size: 12px;
+    font-family: 'Kosugi', sans-serif;
 }
 .news dd {
     width: 880px;
     padding-top: 3px;
     padding-bottom: 1.8rem;
+    font-family: 'Kosugi', sans-serif;
 }
 .news span {
     padding: 0 1.5rem;
+    font-family: 'Kosugi', sans-serif;
 }
 .news a {
     min-width: 280px;
@@ -128,6 +139,7 @@
     border-radius: 23px;
     text-decoration: none;
     color: white;
+    font-family: 'Kosugi', sans-serif;
 }
 .news a:hover {
     background-color: white;
@@ -148,6 +160,7 @@
 }
 .menu-item a {
     text-decoration: none;
+    font-family: 'Kosugi', sans-serif;
 }
 .menu-item a:hover {
     text-decoration: underline;
@@ -167,10 +180,12 @@
     font-size: 1.5rem;
     margin-bottom: 3rem;
     padding: 0 5rem;
+    font-family: 'Kosugi', sans-serif;
 }
 .about-text p {
     font-size: 1rem;
     padding: 0 5rem;
+    font-family: 'Kosugi', sans-serif;
 }
 .about-text img {
     margin-top: 85px;
@@ -206,6 +221,7 @@
 .footer-navbar a {
     text-decoration: none;
     color: black;
+    font-family: 'Nerko One', cursive;
 }
 .footer-navbar a:hover {
     color: grey;
@@ -223,6 +239,7 @@
 }
 .footer-info p {
     line-height: 2;
+    font-family: 'Kosugi', sans-serif;
 }
 .copyright {
     text-align: center;
@@ -262,6 +279,7 @@
 }
 .about-table th, td {
     padding: 1rem;
+    font-family: 'Kosugi', sans-serif;
 }
 .about-table th {
     width: 25%;
@@ -329,10 +347,15 @@ input[type="text"] {
     margin-bottom: 80px;
 }
 .main-menu-item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: #f2f2f2;
     border-radius: 15px;
     border: 1px solid #E6ECEA;
+    box-shadow: 10px 10px 10px grey;
+    transition: all 0.7s ease;
+}
+.main-menu-item:hover {
+    transform: scale(1.05);
 }
 .main-menu-item h3 {
     margin-top: 20px;
@@ -343,6 +366,9 @@ input[type="text"] {
 .menu-container {
     display: flex;
     justify-content: space-between;
+}
+.menu-container p, li {
+    font-family: 'Kosugi', sans-serif;
 }
 .menu-photo {
     padding: 30px;
@@ -365,8 +391,11 @@ input[type="text"] {
     position: absolute;
     right: 0;
 }
-.main-menu-title p {
+.main-menu p {
     font-size: initial;
+    font-family: 'Kosugi', sans-serif;
+    line-height: 2;
+    padding-bottom: 20px;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -379,6 +408,7 @@ input[type="text"] {
     padding: .5rem 0;
     border-bottom: 3px double #ccc;
     margin-bottom: 10px;
+    font-family: 'Kosugi', sans-serif;
 }
 .aside-menu span {
     color: #ccc;
@@ -391,6 +421,7 @@ input[type="text"] {
     padding-top: .25rem;
     padding-bottom: .25rem;
     color: black;
+    font-family: 'Kosugi', sans-serif;
 }
 .special {
     padding-left: 10px;
@@ -424,6 +455,11 @@ input[type="text"] {
         display: flex;
         position: relative;
     }
+    .menubar-mobile h1 {
+        font-family: 'Nerko One', cursive;
+        line-height: 35px;
+        font-size: xx-large;
+    }
     .menubar-mobile i {
         font-size: 28px;
         cursor: pointer;
@@ -445,6 +481,7 @@ input[type="text"] {
     }
     .menubar-mobile li a {
         color: cornsilk;
+        font-family: 'Nerko One', cursive;
     }
     .button-input:checked ~ .nav-overlay {
         display: block;
@@ -455,15 +492,21 @@ input[type="text"] {
     .top-key-text {
         display: none;
     }
+    .top-key-handwriting h2 img {
+        width: 380px;
+    }
     .news dl {
         margin: 0 10px 20px 10px;
         max-width: 350px;
+    }
+    .news dd {
+        line-height: 2;
     }
     .menu-wrapper {
         flex-wrap: wrap;
     }
     .about-wrapper {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
     .about-img {
         flex-basis: 95%;
@@ -482,7 +525,9 @@ input[type="text"] {
         padding: 0;
     }
     .about-text p img {
-        display: none;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
     }
     .footer-navbar {
         justify-content: center;
@@ -539,6 +584,14 @@ input[type="text"] {
         text-align: center;
         line-height: 36px;
     }
+    /* ----Mobile resposive for menu.html----- */
+    .about-detail-wrapper {
+        flex-wrap: wrap;
+        margin: auto 10px;
+    }
+    .contact {
+        width: 90%;
+    }
 }
 /* -----Tablet------740-1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 64em){
@@ -554,7 +607,25 @@ input[type="text"] {
     .about-text {
         margin-top: 20px;
     }
+    .about-text img {
+        margin: 0;
+    }
     .news span {
         display: none;
+    }
+    .footer-navbar-wrapper {
+        margin-left: 20px;
+    }
+    .main-menu-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aside-menu {
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .aside-menu li {
+        border-bottom: 1px solid #ccc;
     }
 }
