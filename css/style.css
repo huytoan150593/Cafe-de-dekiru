@@ -1,6 +1,8 @@
 /* font-family: 'Kosugi', sans-serif;
 font-family: 'Nerko One', cursive; */
-
+* {
+    scroll-behavior: smooth;
+}
 .head-logo {
     text-align: center;
 }
@@ -402,6 +404,10 @@ input[type="text"] {
 }
 .aside-menu {
     width: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 310px;
 }
 .aside-menu h3 {
     margin-top: 20px;
@@ -507,6 +513,7 @@ input[type="text"] {
     }
     .about-wrapper {
         flex-wrap: wrap-reverse;
+        justify-content: center;
     }
     .about-img {
         flex-basis: 95%;

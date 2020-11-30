@@ -14,7 +14,7 @@
     <header>
         <div class="head-logo">
             <p>
-                <a href=""><img src="./images/logo.png" alt=""></a>
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
             </p>
         </div>
         <nav class="menubar-nav">
@@ -48,9 +48,9 @@
         </div>
         <div class="main-menu-wrapper wrapper">
             <div class="main-menu">
-                <h3 class="main-menu-title"> <img src="./images/top-menu-beverage.png" alt=""> </h3>
+                <h3 id="beverage" class="main-menu-title"> <img src="./images/top-menu-beverage.png" alt=""> </h3>
                 <div class="main-menu-item">
-                    <h3>コーヒー</h3>
+                    <h3 id="coffee">コーヒー</h3>
                     <div class="menu-container">
                         <span class="menu-photo">
                             <img src="./images/top-fig01.png" alt="">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="main-menu-item">
-                    <h3>ティー</h3>
+                    <h3 id="tea">ティー</h3>
                     <div class="menu-container reverse">
                         <span class="menu-photo">
                             <img src="./images/menu-drink-tea.png" alt="">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="main-menu-item">
-                    <h3>その他</h3>
+                    <h3 id="other">その他</h3>
                     <div class="menu-container">
                         <span class="menu-photo">
                             <img src="./images/menu-drink-other.png" alt="">
@@ -103,9 +103,9 @@
                         </ul>
                     </div>
                 </div>
-                <h3 class="main-menu-title"><img src="./images/top-menu-foods.png" alt=""></h3>
+                <h3 id="foods" class="main-menu-title"><img src="./images/top-menu-foods.png" alt=""></h3>
                 <div class="main-menu-item">
-                    <h3>軽食</h3>
+                    <h3 id="light-foods">軽食</h3>
                     <div class="menu-container reverse">
                         <span class="menu-photo">
                             <img src="./images/menu-food.png" alt="">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="main-menu-item">
-                    <h3>デザート</h3>
+                    <h3 id="dessert">デザート</h3>
                     <div class="menu-container">
                         <span class="menu-photo">
                             <img src="./images/top-fig02.png" alt="">
@@ -142,7 +142,7 @@
                 <p>すべての軽食・デザートにプラス300円でドリンクがつけられます。<br>
                     冷たい飲み物には、プラス100円でアイスフロートにできます。</p>
                 <div class="main-menu-item">
-                    <h3>モーニングセット 7:00-11:00まで</h3>
+                    <h3 id="morning-set">モーニングセット 7:00-11:00まで</h3>
                     <div class="menu-container reverse">
                         <span class="menu-photo">
                             <img src="./images/top-fig03.png" alt="">
@@ -159,14 +159,14 @@
             <div class="aside-menu">
                 <h3>メニュー<span>menu</span></h3>
                 <ul>
-                    <li> <a href="">飲み物</a>　<span>beverage</span> </li>
-                    <li> <a href="" class="special">コーヒー</a> </li>
-                    <li> <a href="" class="special">ティー</a> </li>
-                    <li> <a href="" class="special">その他</a> </li>
-                    <li> <a href="">食べ物</a> <span>foods</span> </li>
-                    <li> <a href="" class="special">軽食 (ホット）</a> </li>
-                    <li> <a href="" class="special">デザート</a> </li>
-                    <li> <a href="">セットメニュー</a> <span>set-menu</span> </li>
+                    <li> <a href="#beverage">飲み物</a>　<span>beverage</span> </li>
+                    <li> <a href="#coffee" class="special">コーヒー</a> </li>
+                    <li> <a href="#tea" class="special">ティー</a> </li>
+                    <li> <a href="#other" class="special">その他</a> </li>
+                    <li> <a href="#foods">食べ物</a> <span>foods</span> </li>
+                    <li> <a href="#light-foods" class="special">軽食 (ホット）</a> </li>
+                    <li> <a href="#dessert" class="special">デザート</a> </li>
+                    <li> <a href="#morning-set">セットメニュー</a> <span>set-menu</span> </li>
                 </ul>
             </div>
         </div>
@@ -200,10 +200,10 @@
                         都営地下鉄小川町より徒歩7分
                     </p>
                     <ul class="icon">
-                        <li><a href="https://github.com/huytoan150593/Cafe-de-dekiru"><i class="fab fa-adversal fa-2x"></i></a></li>
-                        <li><a href="https://github.com/huytoan150593/Cafe-de-dekiru"><i class="fab fa-reddit-alien fa-2x"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fab fa-twitter fa-2x"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                        <li><a target="blank" href="https://github.com/huytoan150593/Cafe-de-dekiru"><i class="fab fa-adversal fa-2x"></i></a></li>
+                        <li><a target="blank" href="https://github.com/huytoan150593/Cafe-de-dekiru"><i class="fab fa-reddit-alien fa-2x"></i></a></li>
+                        <li><a target="blank" href="https://www.facebook.com/"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a target="blank" href="https://twitter.com/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
                     </ul>
                 </div>
             </div>
